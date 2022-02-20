@@ -3,7 +3,7 @@
 Weather Report API
 
 ### Description
-Turn on your mobile volume plz💿.On the first page, a series of album cover images is displayed with carousel effect using owlCaroul.js. On the second page, a chosen song will be played by clicking a song from previous page. Furthermore, users are allowed to adjust volume and duration of the song, or change songs.
+openweathermap API. Search a city title and show current weather report of the city.
 
 ### Demo Link
 https://youtu.be/SerMSH_pAYg
@@ -11,7 +11,7 @@ ___
 
 # Environment
 ### Programming
-+ owlCarousel.js
++ openweathermap API
 + HTML
 + CSS
 + JavaScript
