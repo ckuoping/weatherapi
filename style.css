@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Oswald', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-position: center;
+    background-size: cover;
+}
+
+.w-card {
+    background: rgba(0, 0, 0, 0.76);
+    background-image: url('/img/city.jpg');
+    background-position: center;
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 380px;
+    /* height: 600px; */
+    margin: 1em;
+    opacity: 0.95;
+    box-shadow: 0px 0px 15px rgba(49, 48, 48, 0.466);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search button {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 32px;
+    width: 32px;
+    margin: 0.5em 0 0.5em 0.5em;
+    background: #64646457;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    right: 7px;
+}
+
+.search input.search-bar {
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-size: 120%;
+    /* width: calc(100%-10px); */
+    width: 100%;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+.search button:hover {
+    background: #e4e4e42b;
+}
+
+.weather {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0px 20px 0px;
+}
+
+.weather .upper-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather h2.city {
+    font-size: 28px;
+}
+
+.weather h1.temp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 64px;
+}
+
+.weather img {
+    width: 100px;
+}
+
+.weather .flex {
+    display: flex;
+    align-items: center;
+}
+
+.weather .lower-weather .others {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.weather .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading";
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}

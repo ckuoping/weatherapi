@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100&family=Oswald&display=swap" rel="stylesheet">
+    <!-- open css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- private css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="w-card">
+        <div class="search">
+            <input type="text" class="search-bar " placeholder="search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="weather loading">
+            <div class="upper-weather">
+                <h2 class="city">Denver</h2>
+                <h1 class="temp">51°C</h1>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon">
+                    <div class="description">Cloudy</div>
+                </div>
+                <div class="lower-weather">
+                    <div class="others">
+                        <div class="humidity">Humidity: 60%</div>
+                        <div class="wind">Wind Speed: 6.2km/h</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="lower-weather">
+                <div class="others">
+                    <div class="humidity">Humidity: 60%</div>
+                    <div class="wind">Wind Speed: 6.2km/h</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- private js -->
+    <script src="./action.js"></script>
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
